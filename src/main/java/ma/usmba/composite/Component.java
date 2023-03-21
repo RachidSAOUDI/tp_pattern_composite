@@ -9,4 +9,12 @@ public abstract class Component {
     }
 
     public abstract void print();
+
+    public String getTab(){
+        String tab="";
+        for (int i = 0; i < level; i++) {
+            tab=tab+"\t";
+        }
+        return tab;
+    }
 }

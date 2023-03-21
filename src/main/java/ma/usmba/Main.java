@@ -10,7 +10,11 @@ public class Main {
         folder.addChild(new File("Test.java"));
         folder.addChild(new File("config.xml"));
         Folder entities = (Folder) folder.addChild(new Folder("entities"));
+        entities.addChild(new File("Product.java"));
+        entities.addChild(new File("Categorie.java"));
         Folder repositories = (Folder) folder.addChild(new Folder("repositories"));
+        repositories.addChild(new File("ProductRepository.java"));
+        repositories.addChild(new File("CategoryRepository.java"));
         folder.print();
     }
 }
