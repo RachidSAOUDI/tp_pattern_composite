@@ -15,7 +15,7 @@ public class Folder extends Component {
         for (int i = 0; i < level; i++) {
             tab=tab+"\t";
         }
-        System.out.println("Folder : "+name);
+        System.out.println(tab+"Folder : "+name);
         for (Component c:components){
             c.print();
         }
